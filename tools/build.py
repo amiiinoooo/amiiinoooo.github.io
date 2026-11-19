@@ -89,15 +89,16 @@ about = f"""
   <div class="photo"><img src="assets/img/amine.jpg" alt="Portrait of Amine Ben Nasrallah"></div>
   <div class="bio">
    <h2>Biography</h2>
-   <p>I'm a Computer Systems Engineering student at <b>MedTech – South Mediterranean University</b> in Tunis (2023 – 2028). I like building things where hardware and software meet: microcontrollers that talk to web servers, devices on PCBs I designed myself, and the network code that connects them.</p>
+   <p>I'm studying for an <b>Engineering Degree in Computer Systems Engineering</b> at <b>MedTech – South Mediterranean University</b> in Tunis (2023 – 2028). I like building things where hardware and software meet: microcontrollers that talk to web servers, devices on PCBs I designed myself, and the network code that connects them.</p>
    <p>My path so far mixes engineering and initiative. At 15 I built a Mario-style 2D game and took <b>3rd place at a GoMyCode hackathon</b>. At 18 I ran my own small online business, <b>MetaShop</b>. At MedTech I've built a voice-controlled smart house on STM32, a multiplayer game over raw TCP/UDP sockets and an ESP32 Wi-Fi mapper on a custom PCB, and I spent a summer as a <b>cybersecurity intern at Network Associates</b>, securing a real desktop application.</p>
-   <p><b>Where I'm heading:</b> I want to work on embedded and connected systems that are secure by design, from firmware up to the cloud. Outside engineering I edit videos – I co-founded a football YouTube channel and was its main editor.</p>
+   <p><b>Where I'm heading:</b> I want to work on embedded and connected systems that are secure by design, from firmware up to the cloud. Outside engineering I edit videos – I co-founded <b>Rakcha Koora</b>, a football quiz channel, and was its lead video editor.</p>
    <div class="stat-row">
     <div class="stat"><b>10</b><span>projects on GitHub</span></div>
     <div class="stat"><b>15</b><span>certificates</span></div>
     <div class="stat"><b>1</b><span>internship</span></div>
     <div class="stat"><b>4</b><span>languages</span></div>
    </div>
+   <p style="margin-top:16px;color:var(--muted);font-size:15px"><b style="color:var(--soft)">Languages:</b> Arabic · English · French · German (basic)</p>
   </div>
  </div>
 </section>
@@ -175,11 +176,23 @@ acc = f"""
  <p class="sec-intro">What I've built and taken part in outside the classroom.</p>
  <div class="grid g2">
   <div class="card"><span class="badge">Entrepreneurship</span><h3>Founder – MetaShop</h3><div class="meta">Oct 2022 – Jul 2023</div>
-   <p>I started and ran MetaShop on my own: a small online business selling e-cards and gift cards at low prices in Tunisia. I handled everything – sourcing, pricing, orders and customer service.</p>
+   <p>I started and ran MetaShop on my own: an online business selling digital gift cards (PlayStation, Apple, Steam, Epic Games and more) at affordable prices in Tunisia.</p>
+   <ul>
+    <li>Managed the entire operation: sourcing, pricing, order handling, payments and customer service.</li>
+    <li>Processed 86+ orders for 35+ customers, generating ~10K TND in sales – about half of customers came back for repeat orders.</li>
+    <li>Promoted it on Instagram with a public reviews section and clear ordering guides to build trust.</li>
+    <li>Funded by a private investor.</li>
+   </ul>
    {reflect("running a business taught me to own every detail, answer customers fast and keep promises – the same habits I now bring to team projects.")}</div>
-  <div class="card"><span class="badge">Media</span><h3>Co-founder & Video Editor – RakchaKoora</h3><div class="meta">2023</div>
-   <p>With a group of friends I co-founded a football YouTube channel. I was the main video editor for the YouTube videos, Instagram Reels and TikToks, using Adobe Premiere Pro.</p>
-   {reflect("editing for an audience is about rhythm and clarity – cut what doesn't serve the story. It made me better at presentations and demos too.")}</div>
+  <div class="card"><span class="badge">Media</span><h3>Co-founder & Lead Video Editor – Rakcha Koora</h3><div class="meta">Feb 2024 – Aug 2024</div>
+   <p>Co-founded Rakcha Koora, a football quiz channel run by a team of four, where we recorded and played the quizzes on camera.</p>
+   <ul>
+    <li>Lead video editor for all content: long-form YouTube episodes (25–35 min), YouTube Shorts, Instagram Reels and TikTok videos.</li>
+    <li>Managed the channel's social media across YouTube, Instagram and TikTok.</li>
+    <li>Reached 23K+ views, 400+ followers and 600+ likes across all platforms.</li>
+   </ul>
+   {reflect("editing for an audience is about rhythm and clarity – cut what doesn't serve the story. It made me better at presentations and demos too.")}
+   {links([("▶ YouTube channel", "https://www.youtube.com/@RakchaKoora")])}</div>
   <div class="card"><span class="badge">University</span><h3>Fitness For Engineering – Podcast</h3><div class="meta">Fall 2026 · COM307</div>
    <p>A 20-minute group podcast on nutrition, physical activity, supplements and healthy habits for engineering students. I presented the nutrition chapter and edited the final video with captions, chapter cards and topic visuals.</p>
    {links([("▶ Watch the podcast", "https://drive.google.com/file/d/1SKUTouVrSy8AX6TrqLF8PAniJvcxRDsR/view?usp=sharing")])}</div>
@@ -224,7 +237,7 @@ R = lambda r: f"{GH}/{r}"
 B = lambda r, p: f"{GH}/{r}/blob/main/{p}"
 projects = "".join([
     project("smarthouse.jpg", "Embedded Systems", "SmartHouse – Voice-Controlled Home on STM32", "ECE355 · Fall 2025 · team of 5",
-        "Talk to your house: a mobile app sends voice commands to an n8n workflow running a local LLM (Ollama), which turns them into HTTP commands for an STM32 board. The STM32, programmed in C with an ESP8266 web server, drives lights, a heater and servo-controlled doors.",
+        "Talk to your house: a mobile app sends voice commands to an n8n workflow running a local LLM (Ollama), which turns them into HTTP commands for an STM32 board. The STM32, programmed in C with an ESP8266 web server, controls the door, window, light and fan.",
         ["C", "STM32", "ESP8266", "n8n", "Ollama"], [("Code", R("smart-house-stm32")), ("Slides", B("smart-house-stm32", "docs/slides.pdf")), ("Report", B("smart-house-stm32", "docs/final-report.pdf"))],
         "connecting an AI layer to real hardware means designing a strict, simple command format – the LLM is flexible, the microcontroller is not."),
     project("rps-arena.jpg", "Networking", "RPS Arena – Multiplayer Game over TCP/UDP", "CS411 Computer Networks · Fall 2026",
@@ -255,7 +268,7 @@ academic = f"""
  <h2>Internships</h2>
  <div class="card">
   <div class="thumb" style="aspect-ratio:2/1"><img src="assets/img/hotel-app.jpg" alt="Secure Hotel App project card"></div>
-  <span class="badge">Cybersecurity</span><h3>Cybersecurity Intern – Network Associates (NA)</h3>
+  <span class="badge">Cybersecurity</span><h3>Cybersecurity Internship – Network Associates (NA)</h3>
   <div class="meta">May 2025 – Jul 2025 · Lac 1, Tunis · Hybrid</div>
   <p>I secured a hotel management desktop application built with JavaFX and MySQL:</p>
   <ul>
