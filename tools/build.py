@@ -279,7 +279,7 @@ projects = "".join([
     project("plugjuice.jpg", "IoT", "PlugJuice – Smart Plug", "ISS196 Freshman Project · Spring 2024",
         "An IoT smart plug that tracks energy consumption in real time, protects against voltage spikes and can be switched remotely, with a consumption dashboard. Enclosure designed in SolidWorks.",
         ["IoT", "JavaScript", "Python", "SolidWorks"], [("Code", R("smart-plug")), ("Slides", f"{GH}/smart-plug/blob/main/docs/PLUG%20JUICE.pdf")]),
-    project("carnet.jpg", "Startup", "Carnet – Car-Management App Concept", "ISS197 · Fall 2025",
+    project("carnet-card.jpg", "Startup", "Carnet – Car-Management App Concept", "ISS197 · Fall 2025",
         "A startup concept for a car-management app: market study, business-opportunity screening, feasibility and a final pitch.",
         ["Design Thinking", "Market study", "Pitch"], [("Project", R("carnet")), ("Pitch deck", B("carnet", "docs/pitch-deck.pdf"))]),
 ])
