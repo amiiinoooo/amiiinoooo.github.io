@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 GH = "https://github.com/amiiinoooo"
-LINKEDIN = "https://www.linkedin.com/in/amine-ben-nasrallah-921783338/"
+LINKEDIN = "https://www.linkedin.com/in/amine-ben-nasrallah/"
 EMAIL = "amine.bennasrallah@gmail.com"
 
 MENU = [
