@@ -30,6 +30,7 @@ def nav(active):
 
 
 def page(fname, title, kicker, h1, lead, body):
+    fname_url = "" if fname == "index.html" else fname
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +38,14 @@ def page(fname, title, kicker, h1, lead, body):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} · Amine Ben Nasrallah</title>
 <meta name="description" content="E-portfolio of Amine Ben Nasrallah, Computer Systems Engineering student at MedTech – South Mediterranean University.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Amine Ben Nasrallah – E-Portfolio">
+<meta property="og:title" content="{title} · Amine Ben Nasrallah – E-Portfolio">
+<meta property="og:description" content="Computer Systems Engineering student at MedTech – SMU: embedded systems, networking and application security projects, internship, CV and certificates.">
+<meta property="og:image" content="https://amiiinoooo.github.io/assets/img/og-card.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="627">
+<meta property="og:url" content="https://amiiinoooo.github.io/{fname_url}">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%232ecc71'/></svg>">
