@@ -238,8 +238,20 @@ page("accomplishments.html", "Accomplishments", "Accomplishments", '<span class=
      "Extracurricular activities, certificates, rewards and competitions.", acc)
 
 # ======================================================================  ACADEMIC JOURNEY
+# Project cards: the same images used as the GitHub social previews / LinkedIn thumbnails.
+# If a card can't load, the local picture in assets/img is shown instead.
+CARDS = {'smarthouse.jpg': 'https://repository-images.githubusercontent.com/1461697195/69c3c946-08f9-4628-987f-34917e8310fa', 'rps-arena.jpg': 'https://repository-images.githubusercontent.com/1444759593/e1ce9cdd-9b7b-48c5-8d4e-eae54e940e62', 'wifi-mapper.jpg': 'https://repository-images.githubusercontent.com/1461694837/6f955a87-7ba6-4346-9b0f-979de7cdd3ee', 'ml-segments.jpg': 'https://repository-images.githubusercontent.com/1461696590/fb4a655c-c0bc-4e9c-802d-3145f2df3a6b', 'ecosort.jpg': 'https://repository-images.githubusercontent.com/1461693039/f0fd98db-6065-4368-a2ac-ee5e29505416', 'plugjuice.jpg': 'https://repository-images.githubusercontent.com/1461696204/773da8f6-6223-4cec-a193-1d00cd8d9ab2'}
+
+
+def thumb(img, alt):
+    src = CARDS.get(img)
+    if src:
+        return f'<img src="{src}" alt="{alt}" onerror="this.onerror=null;this.src=\'assets/img/{img}\'">'
+    return f'<img src="assets/img/{img}" alt="{alt}">'
+
+
 def project(img, badge, title, meta, desc, tags, lnks, refl=None):
-    return f"""<div class="card"><div class="thumb"><img src="assets/img/{img}" alt="{title}"></div>
+    return f"""<div class="card"><div class="thumb">{thumb(img, title)}</div>
  <span class="badge">{badge}</span><h3>{title}</h3><div class="meta">{meta}</div><p>{desc}</p>{chips(tags)}{reflect(refl) if refl else ""}{links(lnks)}</div>"""
 
 R = lambda r: f"{GH}/{r}"
@@ -276,7 +288,7 @@ academic = f"""
 <section id="internships" style="padding-top:10px">
  <h2>Internships</h2>
  <div class="card">
-  <div class="thumb" style="aspect-ratio:2/1"><img src="assets/img/hotel-app.jpg" alt="Secure Hotel App project card"></div>
+  <div class="thumb" style="aspect-ratio:2/1"><img src="https://repository-images.githubusercontent.com/995468095/0ce3ddfd-20d1-4fab-a3d3-5a492ae24a88" alt="Secure Hotel App project card" onerror="this.onerror=null;this.src='assets/img/hotel-app.jpg'"></div>
   <span class="badge">Cybersecurity</span><h3>Cybersecurity Internship – Network Associates (NA)</h3>
   <div class="meta">May 2025 – Jul 2025 · Lac 1, Tunis · Hybrid</div>
   <p>I secured a hotel management desktop application built with JavaFX and MySQL:</p>
