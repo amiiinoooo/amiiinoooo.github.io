@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 NAME = "Adem Arroum"
 EMAIL = "ademarroum2005@gmail.com"
-LINKEDIN = ""          # paste the LinkedIn profile URL here, e.g. "https://www.linkedin.com/in/..."
+LINKEDIN = "https://www.linkedin.com/in/adem-arroum"
 GITHUB = ""            # paste the GitHub profile URL here, e.g. "https://github.com/username"
 TEAM_GH = "https://github.com/amiiinoooo"   # where the team projects' code is hosted
 
@@ -12,9 +12,8 @@ MENU = [
     ("About", "index.html", [("Biography", "#biography"), ("LinkedIn", "#linkedin"), ("Email", "#email")]),
     ("CV", "cv.html", [("CV", "#cv"), ("Video Résumé", "#video-resume")]),
     ("Accomplishments", "accomplishments.html", [("Extracurricular Activities", "#extracurricular"),
-        ("Professional Certificates", "#certificates"), ("Rewards", "#rewards"), ("Competitions", "#competitions")]),
-    ("Academic Journey", "academic.html", [("Internships", "#internships"), ("Projects", "#projects"),
-        ("Interesting Courses", "#courses"), ("Company Visits", "#company-visits")]),
+        ("Professional Certificates", "#certificates")]),
+    ("Academic Journey", "academic.html", [("Projects", "#projects"), ("Interesting Courses", "#courses")]),
 ]
 
 
@@ -47,13 +46,13 @@ def page(fname, title, kicker, h1, lead, body):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} · {NAME}</title>
-<meta name="description" content="E-portfolio of {NAME}, Software Engineering student at MedTech – South Mediterranean University.">
+<meta name="description" content="E-portfolio of {NAME}, Computer Systems Engineering student at MedTech – South Mediterranean University.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{title} · {NAME} – E-Portfolio">
-<meta property="og:description" content="Software Engineering student at MedTech – SMU: IoT, embedded, networking and machine-learning team projects, CV and certificates.">
+<meta property="og:description" content="Computer Systems Engineering student at MedTech – SMU: IoT, embedded, networking and machine-learning team projects, CV and certificates.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%232ecc71'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23d9622b'/></svg>">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -107,13 +106,10 @@ github_card = (f'<a class="card" href="{GITHUB}" target="_blank" rel="noopener">
 about = f"""
 <section id="biography" style="padding-top:10px">
  <div class="about">
-  <div class="photo" style="aspect-ratio:3/4;display:grid;place-items:center;background:linear-gradient(135deg,#1e3a5f,#3b2a6b)">
-   <span style="font-size:96px;font-weight:800;letter-spacing:-2px;background:linear-gradient(90deg,#60a5fa,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent">AA</span>
-   <!-- To use a photo: put it at assets/img/adem.jpg and replace this block with <img src="assets/img/adem.jpg" alt="Portrait of Adem Arroum"> -->
-  </div>
+  <div class="photo"><img src="assets/img/adem.jpg" alt="Portrait of Adem Arroum"></div>
   <div class="bio">
    <h2>Biography</h2>
-   <p>I'm studying for an <b>Engineering Degree in Software Engineering</b> at <b>MedTech – South Mediterranean University</b> in Tunis (2023 – 2028), after finishing high school at Abu Loubaba in Gabès.</p>
+   <p>I'm studying for an <b>Engineering Degree in Computer Systems Engineering</b> at <b>MedTech – South Mediterranean University</b> in Tunis (2023 – 2028), after finishing high school at Abu Loubaba in Gabès.</p>
    <p>I started with web development: in high school I built an <b>online appointment management system</b> for medical appointments with HTML, CSS, PHP, SQL and JavaScript. At MedTech I've worked in teams on seven projects – from IoT devices like a smart plug and a waste-sorting bin, to a voice-controlled smart house on STM32, a Wi-Fi mapper on a custom PCB, a machine-learning study and a multiplayer network game.</p>
    <p><b>Where I'm heading:</b> I want to build reliable software for real users, especially web applications and data-driven tools. Outside engineering I play football in tournaments and volunteer in my community.</p>
    <div class="stat-row">
@@ -148,9 +144,9 @@ about = f"""
  </div>
 </section>
 """
-page("index.html", "About", "Software Engineering · MedTech – SMU",
+page("index.html", "About", "Computer Systems Engineering · MedTech – SMU",
      'Hi, I\'m <span class="grad">Adem Arroum</span>',
-     "Software Engineering student building web applications, IoT systems and data-driven tools.", about)
+     "Computer Systems Engineering student building web applications, IoT systems and data-driven tools.", about)
 
 # ======================================================================  CV
 cv = f"""
@@ -202,22 +198,24 @@ acc = f"""
  <div class="grid g2">{cert_html}</div>
 </section>
 
-<section id="rewards">
- <h2>Rewards</h2>
- <div class="grid g2">{placeholder("Rewards", "Awards and recognition will be added here.")}</div>
-</section>
-
-<section id="competitions">
- <h2>Competitions</h2>
- <div class="grid g2">{placeholder("Competitions", "Hackathons and competitions will be added here.")}</div>
-</section>
 """
 page("accomplishments.html", "Accomplishments", "Accomplishments", '<span class="grad">Accomplishments</span>',
-     "Extracurricular activities, certificates, rewards and competitions.", acc)
+     "Extracurricular activities and certificates.", acc)
 
 # ======================================================================  ACADEMIC JOURNEY
+# Project cards: the same images used as the GitHub previews / LinkedIn thumbnails.
+CARDS = {'smarthouse.jpg': 'https://repository-images.githubusercontent.com/1461697195/69c3c946-08f9-4628-987f-34917e8310fa', 'rps-arena.jpg': 'https://repository-images.githubusercontent.com/1444759593/e1ce9cdd-9b7b-48c5-8d4e-eae54e940e62', 'wifi-mapper.jpg': 'https://repository-images.githubusercontent.com/1461694837/6f955a87-7ba6-4346-9b0f-979de7cdd3ee', 'ml-segments.jpg': 'https://repository-images.githubusercontent.com/1461696590/fb4a655c-c0bc-4e9c-802d-3145f2df3a6b', 'ecosort.jpg': 'https://repository-images.githubusercontent.com/1461693039/f0fd98db-6065-4368-a2ac-ee5e29505416', 'plugjuice.jpg': 'https://repository-images.githubusercontent.com/1461696204/773da8f6-6223-4cec-a193-1d00cd8d9ab2'}
+
+
+def thumb(img, alt):
+    src = CARDS.get(img)
+    if src:
+        return f'<img src="{src}" alt="{alt}" onerror="this.onerror=null;this.src=\'assets/img/{img}\'">'
+    return f'<img src="assets/img/{img}" alt="{alt}">'
+
+
 def project(img, badge, title, meta, desc, tags, lnks, refl=None):
-    return f"""<div class="card"><div class="thumb"><img src="assets/img/{img}" alt="{title}"></div>
+    return f"""<div class="card"><div class="thumb">{thumb(img, title)}</div>
  <span class="badge">{badge}</span><h3>{title}</h3><div class="meta">{meta}</div><p>{desc}</p>{chips(tags)}{reflect(refl) if refl else ""}{links(lnks)}</div>"""
 
 R = lambda r: f"{TEAM_GH}/{r}"
@@ -235,7 +233,7 @@ projects = "".join([
         "A mobile app sends voice commands to an n8n workflow running a local LLM (Ollama), which turns them into HTTP commands for an STM32 board. The STM32, programmed in C with an ESP8266 web server, controls the door, window, light and fan.",
         ["C", "STM32", "ESP8266", "n8n", "Ollama"], [("Code", R("smart-house-stm32")), ("Slides", B("smart-house-stm32", "docs/slides.pdf")), ("Report", B("smart-house-stm32", "docs/final-report.pdf"))],
         "connecting an AI layer to hardware needs a strict, simple command format between the two."),
-    project("carnet.jpg", "Startup", "Carnet – Car-Management App Concept", "ISS197 · Fall 2025 · team project",
+    project("carnet-card.jpg", "Startup", "Carnet – Car-Management App Concept", "ISS197 · Fall 2025 · team project",
         "A startup concept for a car-management app: market study, business-opportunity screening, feasibility and a final pitch.",
         ["Design Thinking", "Market study", "Pitch"], [("Project", R("carnet")), ("Pitch deck", B("carnet", "docs/pitch-deck.pdf"))],
         "a good product starts with a real problem and real users, not with the technology."),
@@ -263,12 +261,8 @@ hs_project = f"""<div class="card"><span class="badge">Web Development</span><h3
  {chips(["HTML", "CSS", "PHP", "SQL", "JavaScript"])}</div>"""
 
 academic = f"""
-<section id="internships" style="padding-top:10px">
- <h2>Internships</h2>
- <div class="grid g2">{placeholder("Internship", "My internship experience will be added here.")}</div>
-</section>
 
-<section id="projects">
+<section id="projects" style="padding-top:10px">
  <h2>Projects</h2>
  <p class="sec-intro">Team projects from my years at MedTech, each with its code, slides and report.</p>
  <div class="grid g2">{projects}</div>
@@ -295,12 +289,8 @@ academic = f"""
  </div>
 </section>
 
-<section id="company-visits">
- <h2>Company Visits</h2>
- <div class="grid g2">{placeholder("Company visits", "Company visits will be added here.")}</div>
-</section>
 """
 page("academic.html", "Academic Journey", "Academic Journey", 'Academic <span class="grad">Journey</span>',
-     "My projects, favourite courses, internships and company visits at MedTech.", academic)
+     "My projects and favourite courses at MedTech.", academic)
 
 print("built")
