@@ -9,8 +9,6 @@ EMAIL = "amine.bennasrallah@gmail.com"
 MENU = [
     ("About", "index.html", [("Biography", "#biography"), ("LinkedIn", "#linkedin"), ("Email", "#email")]),
     ("CV", "cv.html", [("CV", "#cv"), ("Video Résumé", "#video-resume")]),
-    ("Career Development", "career.html", [("Job Fair", "#job-fair"), ("Conferences & Seminars", "#conferences"),
-        ("Inspirational Talks", "#talks"), ("Community Engagement", "#community"), ("Workshops", "#workshops")]),
     ("Accomplishments", "accomplishments.html", [("Extracurricular Activities", "#extracurricular"),
         ("Professional Certificates", "#certificates"), ("Rewards", "#rewards"), ("Competitions", "#competitions")]),
     ("Academic Journey", "academic.html", [("Internships", "#internships"), ("Projects", "#projects"),
@@ -92,7 +90,7 @@ about = f"""
   <div class="bio">
    <h2>Biography</h2>
    <p>I'm a Computer Systems Engineering student at <b>MedTech – South Mediterranean University</b> in Tunis (2023 – 2028). I like building things where hardware and software meet: microcontrollers that talk to web servers, devices on PCBs I designed myself, and the network code that connects them.</p>
-   <p>My path so far mixes engineering and initiative. At 13 I built a Mario-style 2D game and took <b>3rd place at a GoMyCode hackathon</b>. At 16 I ran my own small online business, <b>MetaShop</b>. At MedTech I've built a voice-controlled smart house on STM32, a multiplayer game over raw TCP/UDP sockets and an ESP32 Wi-Fi mapper on a custom PCB, and I spent a summer as a <b>cybersecurity intern at Network Associates</b>, securing a real desktop application.</p>
+   <p>My path so far mixes engineering and initiative. At 13 I built a Mario-style 2D game and took <b>3rd place at a GoMyCode hackathon</b>. At 18 I ran my own small online business, <b>MetaShop</b>. At MedTech I've built a voice-controlled smart house on STM32, a multiplayer game over raw TCP/UDP sockets and an ESP32 Wi-Fi mapper on a custom PCB, and I spent a summer as a <b>cybersecurity intern at Network Associates</b>, securing a real desktop application.</p>
    <p><b>Where I'm heading:</b> I want to work on embedded and connected systems that are secure by design, from firmware up to the cloud. Outside engineering I edit videos – I co-founded a football YouTube channel and was its main editor.</p>
    <div class="stat-row">
     <div class="stat"><b>10</b><span>projects on GitHub</span></div>
@@ -148,21 +146,6 @@ cv = f"""
 """
 page("cv.html", "CV", "Curriculum Vitae", 'My <span class="grad">CV</span>',
      "Education, experience, projects and skills on one page.", cv)
-
-# ======================================================================  CAREER DEVELOPMENT
-def career_sec(id_, title, n, intro):
-    cards = "".join(placeholder(f"Event {i}", "Event name, organiser, date and what I took away from it.") for i in range(1, n + 1))
-    return f'<section id="{id_}"><h2>{title}<span class="num">({n})</span></h2><p class="sec-intro">{intro}</p><div class="grid g3">{cards}</div></section>'
-
-career = (
-    career_sec("job-fair", "Job Fair", 1, "Meeting companies and recruiters to learn what the industry expects from engineers.")
-    + career_sec("conferences", "Conferences & Seminars", 6, "Talks and seminars that broadened my view of technology and engineering.")
-    + career_sec("talks", "Inspirational Talks", 3, "Stories from founders, engineers and leaders that shaped how I think about my career.")
-    + career_sec("community", "Community Engagement Events", 3, "Events where I gave time and skills back to the community.")
-    + career_sec("workshops", "Workshops", 3, "Hands-on sessions where I learned a new tool or skill.")
-)
-page("career.html", "Career Development", "Career Development", 'Career <span class="grad">Development</span>',
-     "Job fairs, conferences, talks, community events and workshops that shaped my professional growth.", career)
 
 # ======================================================================  ACCOMPLISHMENTS
 certs = [
