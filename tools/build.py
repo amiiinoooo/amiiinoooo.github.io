@@ -90,7 +90,7 @@ about = f"""
   <div class="bio">
    <h2>Biography</h2>
    <p>I'm a Computer Systems Engineering student at <b>MedTech – South Mediterranean University</b> in Tunis (2023 – 2028). I like building things where hardware and software meet: microcontrollers that talk to web servers, devices on PCBs I designed myself, and the network code that connects them.</p>
-   <p>My path so far mixes engineering and initiative. At 13 I built a Mario-style 2D game and took <b>3rd place at a GoMyCode hackathon</b>. At 18 I ran my own small online business, <b>MetaShop</b>. At MedTech I've built a voice-controlled smart house on STM32, a multiplayer game over raw TCP/UDP sockets and an ESP32 Wi-Fi mapper on a custom PCB, and I spent a summer as a <b>cybersecurity intern at Network Associates</b>, securing a real desktop application.</p>
+   <p>My path so far mixes engineering and initiative. At 15 I built a Mario-style 2D game and took <b>3rd place at a GoMyCode hackathon</b>. At 18 I ran my own small online business, <b>MetaShop</b>. At MedTech I've built a voice-controlled smart house on STM32, a multiplayer game over raw TCP/UDP sockets and an ESP32 Wi-Fi mapper on a custom PCB, and I spent a summer as a <b>cybersecurity intern at Network Associates</b>, securing a real desktop application.</p>
    <p><b>Where I'm heading:</b> I want to work on embedded and connected systems that are secure by design, from firmware up to the cloud. Outside engineering I edit videos – I co-founded a football YouTube channel and was its main editor.</p>
    <div class="stat-row">
     <div class="stat"><b>10</b><span>projects on GitHub</span></div>
@@ -198,7 +198,7 @@ acc = f"""
  <h2>Rewards</h2>
  <p class="sec-intro">Recognition I've received.</p>
  <div class="grid g2">
-  <div class="card"><span class="badge gold">🥉 3rd place</span><h3>GoMyCode Hackathon</h3><div class="meta">2019</div><p>Podium finish for a Mario-style 2D game I built at 13 – see Competitions below.</p></div>
+  <div class="card"><span class="badge gold">🥉 3rd place</span><h3>GoMyCode Hackathon</h3><div class="meta">2019</div><p>Podium finish for a Mario-style 2D game I built at 15 – see Competitions below.</p></div>
   <div class="card"><span class="badge gold">💡 Best Idea</span><h3>Spark Program – BIAT Foundation</h3><div class="meta">2017</div><p>Received the Best Idea certificate in the BIAT Foundation's Spark program.</p></div>
  </div>
 </section>
@@ -206,8 +206,8 @@ acc = f"""
 <section id="competitions">
  <h2>Competitions</h2>
  <div class="grid g2">
-  <div class="card"><span class="badge gold">🥉 3rd place</span><h3>GoMyCode Hackathon – Mario-style 2D Game</h3><div class="meta">2019 · age 13</div>
-   <p>At 13, I built a simple Mario-like 2D game during the GoMyCode hackathon and placed 3rd.</p>
+  <div class="card"><span class="badge gold">🥉 3rd place</span><h3>GoMyCode Hackathon – Mario-style 2D Game</h3><div class="meta">2019 · age 15</div>
+   <p>At 15, I built a simple Mario-like 2D game during the GoMyCode hackathon and placed 3rd.</p>
    {reflect("this was the moment I realised I could build something real on my own, under pressure. It's why I chose engineering.")}</div>
  </div>
 </section>
