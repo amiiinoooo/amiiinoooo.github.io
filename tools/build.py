@@ -49,7 +49,8 @@ def page(fname, title, kicker, h1, lead, body):
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%232ecc71'/></svg>">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=4">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 {nav(fname)}
@@ -65,6 +66,7 @@ def page(fname, title, kicker, h1, lead, body):
   <span>© 2026 Amine Ben Nasrallah · MedTech – South Mediterranean University</span>
   <span><a href="mailto:{EMAIL}">Email</a> · <a href="{LINKEDIN}" target="_blank" rel="noopener">LinkedIn</a> · <a href="{GH}" target="_blank" rel="noopener">GitHub</a></span>
 </div></footer>
+<script src="assets/site.js?v=1" defer></script>
 </body>
 </html>
 """
