@@ -44,11 +44,11 @@ def page(fname, title, body, head=""):
 <meta name="theme-color" content="#0f1a2b">
 <meta name="color-scheme" content="dark">
 <title>{title} · Amine Ben Nasrallah</title>
-<meta name="description" content="E-portfolio of Amine Ben Nasrallah, Computer Systems Engineering student at MedTech – South Mediterranean University.">
+<meta name="description" content="E-portfolio of Amine Ben Nasrallah, Computer Systems Engineering student at MedTech (South Mediterranean University).">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Amine Ben Nasrallah – E-Portfolio">
-<meta property="og:title" content="{title} · Amine Ben Nasrallah – E-Portfolio">
-<meta property="og:description" content="Computer Systems Engineering student at MedTech – SMU: embedded systems, networking and application security projects, internship, CV and certificates.">
+<meta property="og:site_name" content="Amine Ben Nasrallah · E-Portfolio">
+<meta property="og:title" content="{title} · Amine Ben Nasrallah · E-Portfolio">
+<meta property="og:description" content="Computer Systems Engineering student at MedTech (SMU): embedded systems, networking and application security projects, internship, CV and certificates.">
 <meta property="og:image" content="https://amiiinoooo.github.io/assets/img/og-card.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="627">
 <meta property="og:url" content="https://amiiinoooo.github.io/{"" if fname == "index.html" else fname}">
@@ -65,7 +65,7 @@ def page(fname, title, body, head=""):
 {body}
 </main>
 <footer><div class="in">
-  <span>© 2026 Amine Ben Nasrallah, MedTech – South Mediterranean University</span>
+  <span>© 2026 Amine Ben Nasrallah, MedTech (South Mediterranean University)</span>
   <nav aria-label="Elsewhere"><a href="mailto:{EMAIL}">Email</a><a href="{LINKEDIN}" target="_blank" rel="noopener">LinkedIn</a><a href="{GH}" target="_blank" rel="noopener">GitHub</a></nav>
 </div></footer>
 <script src="assets/site.js?v=2" defer></script>
@@ -103,7 +103,7 @@ def pinout():
            '<path class="notch" d="M262 62a18 18 0 0 0 36 0"/>',
            '<text class="chip-name" x="280" y="186" text-anchor="middle">ABN-2004</text>',
            '<text class="chip-sub" x="280" y="214" text-anchor="middle">Computer Systems Eng.</text>',
-           '<text class="chip-sub" x="280" y="234" text-anchor="middle">MedTech – SMU, Tunis</text>']
+           '<text class="chip-sub" x="280" y="234" text-anchor="middle">MedTech SMU, Tunis</text>']
     i = 0
     for n, (lab, y) in enumerate(zip(left, ys), start=1):
         out += [f'<path class="trace" style="--len:70;--i:{i}" d="M175 {y}h-70"/>',
@@ -126,7 +126,7 @@ about = f"""
 <div class="hero">
   <div>
     <h1>Amine Ben Nasrallah</h1>
-    <p class="lead">Computer Systems Engineering student building embedded, networked and secure systems – from firmware on a microcontroller to the server it talks to.</p>
+    <p class="lead">Computer Systems Engineering student building embedded, networked and secure systems, from the firmware on a microcontroller to the server it talks to.</p>
   </div>
   {pinout()}
 </div>
@@ -136,9 +136,9 @@ about = f"""
  <div class="bio">
   <div class="portrait"><img src="{A}/img/amine.jpg" alt="Portrait of Amine Ben Nasrallah"></div>
   <div>
-   <p>I'm studying for an <b>Engineering Degree in Computer Systems Engineering</b> at <b>MedTech – South Mediterranean University</b> in Tunis (2023 – 2028). I like building things where hardware and software meet: microcontrollers that talk to web servers, devices on PCBs I designed myself, and the network code that connects them.</p>
-   <p>My path so far mixes engineering and initiative. At 15 I built a Mario-style 2D game and took <b>3rd place at a GoMyCode hackathon</b>. At 18 I ran my own small online business, <b>MetaShop</b>. At MedTech I've built a voice-controlled smart house on STM32, a multiplayer game over raw TCP/UDP sockets and an ESP32 Wi-Fi mapper on a custom PCB, and I spent a summer as a <b>cybersecurity intern at Network Associates</b>, securing a real desktop application.</p>
-   <p><b>Where I'm heading:</b> I want to work on embedded and connected systems that are secure by design, from firmware up to the cloud. Outside engineering I edit videos – I co-founded <b>Rakcha Koora</b>, a football quiz channel, and was its lead video editor.</p>
+   <p>I'm studying for an <b>Engineering Degree in Computer Systems Engineering</b> at <b>MedTech (South Mediterranean University)</b> in Tunis (2023 to 2028). I like building things where hardware and software meet: microcontrollers that talk to web servers, devices on PCBs I designed myself, and the network code that connects them.</p>
+   <p>At 15 I built a Mario-style 2D game and took <b>3rd place at a GoMyCode hackathon</b>. At 18 I ran my own small online business, <b>MetaShop</b>. At MedTech I've built a voice-controlled smart house on STM32, a multiplayer game over raw TCP/UDP sockets and an ESP32 Wi-Fi mapper on a custom PCB, and I spent a summer as a <b>cybersecurity intern at Network Associates</b>, securing a real desktop application.</p>
+   <p><b>Where I'm heading:</b> I want to work on embedded and connected systems that are secure by design, from firmware up to the cloud. Outside engineering I edit videos: I co-founded <b>Rakcha Koora</b>, a football quiz channel, and was its lead video editor.</p>
    <div class="facts">
     <div><b>9</b><span>projects on GitHub</span></div>
     <div><b>15</b><span>certificates</span></div>
@@ -215,31 +215,31 @@ acc = f"""
  <h2>Extracurricular activities</h2>
  <p class="intro">What I've built and taken part in outside the classroom.</p>
  <div class="rows">
-  <div class="row"><div class="k">MetaShop<small>Founder, Oct 2022 – Jul 2023</small></div><div class="v">
+  <div class="row"><div class="k">MetaShop<small>Founder, Oct 2022 to Jul 2023</small></div><div class="v">
    <p>I started and ran MetaShop on my own: an online business selling digital gift cards (PlayStation, Apple, Steam, Epic Games and more) at affordable prices in Tunisia.</p>
    <ul class="points">
     <li>Managed the entire operation: sourcing, pricing, order handling, payments and customer service.</li>
-    <li>Processed 86+ orders for 35+ customers, generating ~10K TND in sales – about half of customers came back for repeat orders.</li>
+    <li>Processed 86+ orders for 35+ customers, about 10K TND in sales. About half of the customers came back to order again.</li>
     <li>Promoted it on Instagram with a public reviews section and clear ordering guides to build trust.</li>
     <li>Funded by a private investor.</li>
    </ul>
-   {learned("running a business taught me to own every detail, answer customers fast and keep promises – the same habits I now bring to team projects.")}
+   {learned("running a business taught me to own every detail, answer customers fast and keep promises. I bring the same habits to team projects now.")}
   </div></div>
-  <div class="row"><div class="k">Rakcha Koora<small>Co-founder and lead video editor, Feb – Aug 2024</small></div><div class="v">
+  <div class="row"><div class="k">Rakcha Koora<small>Co-founder and lead video editor, Feb to Aug 2024</small></div><div class="v">
    <p>Co-founded Rakcha Koora, a football quiz channel run by a team of four, where we recorded and played the quizzes on camera.</p>
    <ul class="points">
-    <li>Lead video editor for all content: long-form YouTube episodes (25–35 min), YouTube Shorts, Instagram Reels and TikTok videos.</li>
+    <li>Lead video editor for all content: long-form YouTube episodes (25 to 35 min), YouTube Shorts, Instagram Reels and TikTok videos.</li>
     <li>Managed the channel's social media across YouTube, Instagram and TikTok.</li>
     <li>Reached 23K+ views, 400+ followers and 600+ likes across all platforms.</li>
    </ul>
-   {learned("editing for an audience is about rhythm and clarity – cut what doesn't serve the story. It made me better at presentations and demos too.")}
+   {learned("editing for an audience means cutting whatever doesn't serve the story. It also made me better at presentations and demos.")}
    {acts([("Watch the channel", "https://www.youtube.com/@RakchaKoora")])}
   </div></div>
   <div class="row"><div class="k">Fitness For Engineering<small>Podcast, COM307, fall 2026</small></div><div class="v">
    <p>A 20-minute group podcast on nutrition, physical activity, supplements and healthy habits for engineering students. I presented the nutrition chapter and edited the final video with captions, chapter cards and topic visuals.</p>
    {acts([("Watch the podcast", "https://drive.google.com/file/d/1SKUTouVrSy8AX6TrqLF8PAniJvcxRDsR/view?usp=sharing")])}
   </div></div>
-  <div class="row"><div class="k">Youth organization<small>Volunteer, 2017 – 2018</small></div><div class="v">
+  <div class="row"><div class="k">Youth organization<small>Volunteer, 2017 to 2018</small></div><div class="v">
    <p>Member of a non-profit youth association promoting education, culture and solidarity.</p>
   </div></div>
  </div>
@@ -295,17 +295,17 @@ R = lambda r: f"{GH}/{r}"
 B = lambda r, p: f"{GH}/{r}/blob/main/{p}"
 projects = "".join([
     project("smarthouse.jpg", "SmartHouse: a voice-controlled home on STM32", '<span class="code">ECE355</span>, embedded systems, fall 2025, team of 5',
-        "Talk to your house: a mobile app sends voice commands to an n8n workflow running a local LLM (Ollama), which turns them into HTTP commands for an STM32 board. The STM32, programmed in C with an ESP8266 web server, controls the door, window, light and fan.",
+        "A mobile app sends voice commands to an n8n workflow running a local LLM (Ollama), which turns them into HTTP commands for an STM32 board. The STM32, programmed in C with an ESP8266 web server, controls the door, window, light and fan.",
         ["C", "STM32", "ESP8266", "n8n", "Ollama"], [("Code", R("smart-house-stm32")), ("Slides", B("smart-house-stm32", "docs/slides.pdf")), ("Report", B("smart-house-stm32", "docs/final-report.pdf"))],
-        "connecting an AI layer to real hardware means designing a strict, simple command format – the LLM is flexible, the microcontroller is not."),
+        "connecting an AI layer to real hardware means designing a strict, simple command format, because the LLM is flexible and the microcontroller is not."),
     project("rps-arena.jpg", "RPS Arena: a multiplayer game over TCP/UDP", '<span class="code">CS411</span>, computer networks, fall 2026',
         "Real-time rock-paper-scissors built on raw sockets. One Python game server handles accounts, rooms and scores over TCP and heartbeats, chat and countdown over UDP, for both a Tkinter desktop client and a Flask web client published over HTTPS.",
         ["Python", "TCP/UDP", "Flask", "Tkinter", "PBKDF2"], [("Code", R("RPS_arena")), ("Slides", B("RPS_arena", "docs/RPS.pdf")), ("Design document", B("RPS_arena", "docs/communication-design.pdf"))],
-        "choosing TCP or UDP is a trade-off per message type, not per app – reliability for game state, speed for heartbeats."),
+        "you choose TCP or UDP per message type: reliability for game state, speed for heartbeats."),
     project("wifi-mapper.jpg", "Wi-Fi Signal Mapper: an ESP32 on a custom PCB", '<span class="code">ISS396</span>, junior project, spring 2026',
         "A handheld ESP32 device on a PCB I designed in Altium, in a 3D-printed enclosure. It measures Wi-Fi strength around a building and a Flask back-end with a Tkinter interface turns the readings into a heatmap.",
         ["ESP32", "Altium", "3D printing", "Flask"], [("Code", R("wifi-signal-mapper")), ("Slides", B("wifi-signal-mapper", "docs/presentation.pdf")), ("Report", B("wifi-signal-mapper", "docs/final-report.pdf"))],
-        "a PCB forces you to commit early – every mistake costs a re-order, so design reviews matter."),
+        "a PCB forces you to commit early. Every mistake costs a re-order, so design reviews matter."),
     project("ml-segments.jpg", "Customer segmentation and demand prediction", '<span class="code">CS280</span>, artificial intelligence, spring 2026',
         "On the Online Retail II dataset, I built RFM features and used K-Means to split customers into VIP, Loyal, At-Risk and Lost segments, then compared Logistic Regression, KNN and Random Forest to predict demand.",
         ["Python", "scikit-learn", "pandas", "K-Means"], [("Code", R("customer-segmentation-demand-prediction")), ("Report", B("customer-segmentation-demand-prediction", "docs/report.pdf"))],
@@ -327,7 +327,7 @@ academic = f"""
  <div class="intern">
   <div class="shot"><img src="https://repository-images.githubusercontent.com/995468095/0ce3ddfd-20d1-4fab-a3d3-5a492ae24a88" alt="Secure Hotel App project card" onerror="this.onerror=null;this.src='{A}/img/hotel-app.jpg'"></div>
   <h3>Cybersecurity Internship at Network Associates (NA)</h3>
-  <p class="meta">May – July 2025, Lac 1, Tunis, hybrid</p>
+  <p class="meta">May to July 2025, Lac 1, Tunis, hybrid</p>
   <p>I secured a hotel management desktop application built with JavaFX and MySQL:</p>
   <ul class="points">
    <li>Authentication with e-mail verification (expiring one-time codes), BCrypt password hashing and brute-force lockout.</li>
@@ -336,7 +336,7 @@ academic = f"""
    <li>Logging, error handling, and credentials moved out of the code into environment variables.</li>
   </ul>
   {tags(["Java", "JavaFX", "MySQL", "BCrypt", "OWASP"])}
-  {learned("security is not a feature you add at the end. Every input, every role and every password path has to be designed for the attacker from day one – and explained clearly to the team.")}
+  {learned("every input, every role and every password path has to be designed with the attacker in mind from day one, and explained clearly to the team.")}
   {acts([("Code", R("HospitalManagement")), ("Internship report", f"{GH}/HospitalManagement/blob/master/docs/Amine.BenNasrallah_INT%20101%20-%20Clean.pdf")])}
  </div>
 </section>
@@ -359,10 +359,10 @@ academic = f"""
    {learned("an LLM is only as useful as the context you give it. This course led directly to the n8n + local-LLM brain of our SmartHouse.")}</div></div>
   <div class="row"><div class="k">Startup Engineering<small class="code">ISS197</small></div><div class="v">
    <p>From problem to pitch: finding and screening a business opportunity, design thinking, building a prototype story and pitching it. Our team developed Carnet, a car-management app concept, and I completed the University of Virginia's Design Thinking course alongside it.</p>
-   {learned("a good product starts with a real problem and real users, not with the technology I want to use.")}</div></div>
+   {learned("a good product starts with a real problem and real users. The technology I'd like to use comes after.")}</div></div>
   <div class="row"><div class="k">Database Management<small class="code">CS331</small></div><div class="v">
    <p>Entity-relationship modelling, mapping to the relational model, SQL and transactions. I designed complete schemas for a hospital and a university system in MySQL Workbench and completed three practical lab exams.</p>
-   {learned("a clean schema saves hundreds of lines of code later – and it's the base of the SQL-injection defences I used in my internship.")}</div></div>
+   {learned("a clean schema saves hundreds of lines of code later. It's also the base of the SQL-injection defences I used in my internship.")}</div></div>
  </div>
 </section>
 
