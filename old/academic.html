@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1119">
+<meta name="color-scheme" content="dark">
+<title>Academic Journey · Amine Ben Nasrallah</title>
+<meta name="description" content="E-portfolio of Amine Ben Nasrallah, Computer Systems Engineering student at MedTech – South Mediterranean University.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Amine Ben Nasrallah – E-Portfolio">
+<meta property="og:title" content="Academic Journey · Amine Ben Nasrallah – E-Portfolio">
+<meta property="og:description" content="Computer Systems Engineering student at MedTech – SMU: embedded systems, networking and application security projects, internship, CV and certificates.">
+<meta property="og:image" content="https://amiiinoooo.github.io/assets/img/og-card.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="627">
+<meta property="og:url" content="https://amiiinoooo.github.io/academic.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%232ecc71'/></svg>">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<div style="background:#d9a441;color:#0f1a2b;text-align:center;padding:8px 12px;font:600 14px system-ui">Archived design (before 21 Nov 2026). <a href="../index.html" style="color:#0f1a2b;text-decoration:underline">Go to the current site</a></div>
+<header><nav class="nav">
+  <a class="brand" href="index.html"><span class="dot"></span>Amine Ben Nasrallah</a>
+  <button class="burger" aria-label="Open menu" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+  <ul class="menu"><li><a href="index.html">About</a><ul class="sub"><li><a href="index.html#biography">Biography</a></li><li><a href="index.html#linkedin">LinkedIn</a></li><li><a href="index.html#email">Email</a></li></ul></li><li><a href="cv.html">CV</a><ul class="sub"><li><a href="cv.html#cv">CV</a></li><li><a href="cv.html#video-resume">Video Résumé</a></li></ul></li><li><a href="accomplishments.html">Accomplishments</a><ul class="sub"><li><a href="accomplishments.html#extracurricular">Extracurricular Activities</a></li><li><a href="accomplishments.html#certificates">Professional Certificates</a></li><li><a href="accomplishments.html#rewards">Rewards</a></li><li><a href="accomplishments.html#competitions">Competitions</a></li></ul></li><li><a href="academic.html" class="active">Academic Journey</a><ul class="sub"><li><a href="academic.html#internships">Internships</a></li><li><a href="academic.html#projects">Projects</a></li><li><a href="academic.html#courses">Interesting Courses</a></li><li><a href="academic.html#company-visits">Company Visits</a></li></ul></li></ul>
+</nav></header>
+<main>
+<div class="hero">
+  <div class="kicker"><span class="dot"></span>Academic Journey</div>
+  <h1>Academic <span class="grad">Journey</span></h1>
+  <p class="lead">My internship, projects, favourite courses and company visits at MedTech.</p>
+</div>
+
+<section id="internships" style="padding-top:10px">
+ <h2>Internships</h2>
+ <div class="card">
+  <div class="thumb" style="aspect-ratio:2/1"><img src="https://repository-images.githubusercontent.com/995468095/0ce3ddfd-20d1-4fab-a3d3-5a492ae24a88" alt="Secure Hotel App project card" onerror="this.onerror=null;this.src='../assets/img/hotel-app.jpg'"></div>
+  <span class="badge">Cybersecurity</span><h3>Cybersecurity Internship – Network Associates (NA)</h3>
+  <div class="meta">May 2025 – Jul 2025 · Lac 1, Tunis · Hybrid</div>
+  <p>I secured a hotel management desktop application built with JavaFX and MySQL:</p>
+  <ul>
+   <li>Authentication with e-mail verification (expiring one-time codes), BCrypt password hashing and brute-force lockout.</li>
+   <li>Role-based access control (staff / client) with a hierarchical request-validation workflow to block privilege escalation.</li>
+   <li>Input validation, sanitization and prepared statements on every query to prevent SQL injection.</li>
+   <li>Logging, error handling, and credentials moved out of the code into environment variables.</li>
+  </ul>
+  <div class="chips"><span class="chip">Java</span><span class="chip">JavaFX</span><span class="chip">MySQL</span><span class="chip">BCrypt</span><span class="chip">OWASP</span></div>
+  <div class="reflect"><b>What I learned:</b> security is not a feature you add at the end. Every input, every role and every password path has to be designed for the attacker from day one – and explained clearly to the team.</div>
+  <div class="links"><a class="btn" href="https://github.com/amiiinoooo/HospitalManagement" target="_blank" rel="noopener">Code</a><a class="btn ghost" href="https://github.com/amiiinoooo/HospitalManagement/blob/master/docs/Amine.BenNasrallah_INT%20101%20-%20Clean.pdf" target="_blank" rel="noopener">Internship report</a></div>
+ </div>
+</section>
+
+<section id="projects">
+ <h2>Projects</h2>
+ <p class="sec-intro">Course and team projects from my years at MedTech, each with its code, slides and report.</p>
+ <div class="grid g2"><div class="card"><div class="thumb"><img src="https://repository-images.githubusercontent.com/1461697195/69c3c946-08f9-4628-987f-34917e8310fa" alt="SmartHouse – Voice-Controlled Home on STM32" onerror="this.onerror=null;this.src='../assets/img/smarthouse.jpg'"></div>
+ <span class="badge">Embedded Systems</span><h3>SmartHouse – Voice-Controlled Home on STM32</h3><div class="meta">ECE355 · Fall 2025 · team of 5</div><p>Talk to your house: a mobile app sends voice commands to an n8n workflow running a local LLM (Ollama), which turns them into HTTP commands for an STM32 board. The STM32, programmed in C with an ESP8266 web server, controls the door, window, light and fan.</p><div class="chips"><span class="chip">C</span><span class="chip">STM32</span><span class="chip">ESP8266</span><span class="chip">n8n</span><span class="chip">Ollama</span></div><div class="reflect"><b>What I learned:</b> connecting an AI layer to real hardware means designing a strict, simple command format – the LLM is flexible, the microcontroller is not.</div><div class="links"><a class="btn" href="https://github.com/amiiinoooo/smart-house-stm32" target="_blank" rel="noopener">Code</a><a class="btn ghost" href="https://github.com/amiiinoooo/smart-house-stm32/blob/main/docs/slides.pdf" target="_blank" rel="noopener">Slides</a><a class="btn ghost" href="https://github.com/amiiinoooo/smart-house-stm32/blob/main/docs/final-report.pdf" target="_blank" rel="noopener">Report</a></div></div><div class="card"><div class="thumb"><img src="https://repository-images.githubusercontent.com/1444759593/e1ce9cdd-9b7b-48c5-8d4e-eae54e940e62" alt="RPS Arena – Multiplayer Game over TCP/UDP" onerror="this.onerror=null;this.src='../assets/img/rps-arena.jpg'"></div>
+ <span class="badge">Networking</span><h3>RPS Arena – Multiplayer Game over TCP/UDP</h3><div class="meta">CS411 Computer Networks · Fall 2026</div><p>Real-time rock-paper-scissors built on raw sockets. One Python game server handles accounts, rooms and scores over TCP and heartbeats, chat and countdown over UDP, for both a Tkinter desktop client and a Flask web client published over HTTPS.</p><div class="chips"><span class="chip">Python</span><span class="chip">TCP/UDP</span><span class="chip">Flask</span><span class="chip">Tkinter</span><span class="chip">PBKDF2</span></div><div class="reflect"><b>What I learned:</b> choosing TCP or UDP is a trade-off per message type, not per app – reliability for game state, speed for heartbeats.</div><div class="links"><a class="btn" href="https://github.com/amiiinoooo/RPS_arena" target="_blank" rel="noopener">Code</a><a class="btn ghost" href="https://github.com/amiiinoooo/RPS_arena/blob/main/docs/RPS.pdf" target="_blank" rel="noopener">Slides</a><a class="btn ghost" href="https://github.com/amiiinoooo/RPS_arena/blob/main/docs/communication-design.pdf" target="_blank" rel="noopener">Design doc</a></div></div><div class="card"><div class="thumb"><img src="https://repository-images.githubusercontent.com/1461694837/6f955a87-7ba6-4346-9b0f-979de7cdd3ee" alt="Wi-Fi Signal Mapper – ESP32 on a Custom PCB" onerror="this.onerror=null;this.src='../assets/img/wifi-mapper.jpg'"></div>
+ <span class="badge">Hardware</span><h3>Wi-Fi Signal Mapper – ESP32 on a Custom PCB</h3><div class="meta">ISS396 Junior Project · Spring 2026</div><p>A handheld ESP32 device on a PCB I designed in Altium, in a 3D-printed enclosure. It measures Wi-Fi strength around a building and a Flask back-end with a Tkinter interface turns the readings into a heatmap.</p><div class="chips"><span class="chip">ESP32</span><span class="chip">Altium</span><span class="chip">3D printing</span><span class="chip">Flask</span></div><div class="reflect"><b>What I learned:</b> a PCB forces you to commit early – every mistake costs a re-order, so design reviews matter.</div><div class="links"><a class="btn" href="https://github.com/amiiinoooo/wifi-signal-mapper" target="_blank" rel="noopener">Code</a><a class="btn ghost" href="https://github.com/amiiinoooo/wifi-signal-mapper/blob/main/docs/presentation.pdf" target="_blank" rel="noopener">Slides</a><a class="btn ghost" href="https://github.com/amiiinoooo/wifi-signal-mapper/blob/main/docs/final-report.pdf" target="_blank" rel="noopener">Report</a></div></div><div class="card"><div class="thumb"><img src="https://repository-images.githubusercontent.com/1461696590/fb4a655c-c0bc-4e9c-802d-3145f2df3a6b" alt="Customer Segmentation & Demand Prediction" onerror="this.onerror=null;this.src='../assets/img/ml-segments.jpg'"></div>
+ <span class="badge">Machine Learning</span><h3>Customer Segmentation & Demand Prediction</h3><div class="meta">CS280 Artificial Intelligence · Spring 2026</div><p>On the Online Retail II dataset, I built RFM features and used K-Means to split customers into VIP, Loyal, At-Risk and Lost segments, then compared Logistic Regression, KNN and Random Forest to predict demand.</p><div class="chips"><span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">pandas</span><span class="chip">K-Means</span></div><div class="reflect"><b>What I learned:</b> most of the work in ML is cleaning and shaping the data; the model choice comes last.</div><div class="links"><a class="btn" href="https://github.com/amiiinoooo/customer-segmentation-demand-prediction" target="_blank" rel="noopener">Code</a><a class="btn ghost" href="https://github.com/amiiinoooo/customer-segmentation-demand-prediction/blob/main/docs/report.pdf" target="_blank" rel="noopener">Report</a></div></div><div class="card"><div class="thumb"><img src="https://repository-images.githubusercontent.com/1461693039/f0fd98db-6065-4368-a2ac-ee5e29505416" alt="EcoSort – Smart Waste-Sorting Bin" onerror="this.onerror=null;this.src='../assets/img/ecosort.jpg'"></div>
+ <span class="badge">IoT</span><h3>EcoSort – Smart Waste-Sorting Bin</h3><div class="meta">ISS296 Sophomore Project · Spring 2025</div><p>A bin that detects the type of waste with sensors and uses servo flaps to sort it into the right compartment, with a Flask dashboard showing the fill level of each bin. Designed in SolidWorks.</p><div class="chips"><span class="chip">Raspberry Pi</span><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">MySQL</span><span class="chip">SolidWorks</span></div><div class="links"><a class="btn" href="https://github.com/amiiinoooo/ecosort" target="_blank" rel="noopener">Code</a><a class="btn ghost" href="https://github.com/amiiinoooo/ecosort/blob/main/docs/EcoSort.pdf" target="_blank" rel="noopener">Slides</a><a class="btn ghost" href="https://github.com/amiiinoooo/ecosort/blob/main/docs/final-report.pdf" target="_blank" rel="noopener">Report</a></div></div><div class="card"><div class="thumb"><img src="https://repository-images.githubusercontent.com/1461696204/773da8f6-6223-4cec-a193-1d00cd8d9ab2" alt="PlugJuice – Smart Plug" onerror="this.onerror=null;this.src='../assets/img/plugjuice.jpg'"></div>
+ <span class="badge">IoT</span><h3>PlugJuice – Smart Plug</h3><div class="meta">ISS196 Freshman Project · Spring 2024</div><p>An IoT smart plug that tracks energy consumption in real time, protects against voltage spikes and can be switched remotely, with a consumption dashboard. Enclosure designed in SolidWorks.</p><div class="chips"><span class="chip">IoT</span><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">SolidWorks</span></div><div class="links"><a class="btn" href="https://github.com/amiiinoooo/smart-plug" target="_blank" rel="noopener">Code</a><a class="btn ghost" href="https://github.com/amiiinoooo/smart-plug/blob/main/docs/PLUG%20JUICE.pdf" target="_blank" rel="noopener">Slides</a></div></div><div class="card"><div class="thumb"><img src="../assets/img/carnet-card.jpg" alt="Carnet – Car-Management App Concept"></div>
+ <span class="badge">Startup</span><h3>Carnet – Car-Management App Concept</h3><div class="meta">ISS197 · Fall 2025</div><p>A startup concept for a car-management app: market study, business-opportunity screening, feasibility and a final pitch.</p><div class="chips"><span class="chip">Design Thinking</span><span class="chip">Market study</span><span class="chip">Pitch</span></div><div class="links"><a class="btn" href="https://github.com/amiiinoooo/carnet" target="_blank" rel="noopener">Project</a><a class="btn ghost" href="https://github.com/amiiinoooo/carnet/blob/main/docs/pitch-deck.pdf" target="_blank" rel="noopener">Pitch deck</a></div></div></div>
+ <p class="sec-intro" style="margin-top:20px">More on GitHub: <a href="https://github.com/amiiinoooo/CareApp" target="_blank" rel="noopener">CareApp</a> (installable hydration-reminder web app).</p>
+</section>
+
+<section id="courses">
+ <h2>Interesting Courses</h2>
+ <p class="sec-intro">Courses that changed how I think about engineering.</p>
+ <div class="grid g2">
+  <div class="card"><span class="badge">ECE355</span><h3>Embedded Systems</h3>
+   <p>Programming an STM32 (ARM Cortex-M4) board in C: GPIO, interrupts and SPI, real-time design with RTOS concepts and system modelling with SysML. The course ended with our SmartHouse project.</p>
+   <div class="reflect"><b>What I learned:</b> reading a datasheet and a reference manual is a skill in itself. Once I could, I stopped guessing and started designing.</div></div>
+  <div class="card"><span class="badge">CS321</span><h3>Prompt Engineering</h3>
+   <p>How large language models work and how to use them well: prompting techniques, retrieval-augmented generation (RAG) and AI agents. With a teammate I built a RAG workflow in n8n that indexes uploaded PDFs and CSVs in a vector store and answers questions with memory, with file upload through Telegram.</p>
+   <div class="reflect"><b>What I learned:</b> an LLM is only as useful as the context you give it. This course led directly to the n8n + local-LLM brain of our SmartHouse.</div></div>
+  <div class="card"><span class="badge">ISS197</span><h3>Startup Engineering</h3>
+   <p>From problem to pitch: finding and screening a business opportunity, design thinking, building a prototype story and pitching it. Our team developed Carnet, a car-management app concept, and I completed the University of Virginia's Design Thinking course alongside it.</p>
+   <div class="reflect"><b>What I learned:</b> a good product starts with a real problem and real users, not with the technology I want to use.</div></div>
+  <div class="card"><span class="badge">CS331</span><h3>Database Management</h3>
+   <p>Entity-relationship modelling, mapping to the relational model, SQL and transactions. I designed complete schemas for a hospital and a university system in MySQL Workbench and completed three practical lab exams.</p>
+   <div class="reflect"><b>What I learned:</b> a clean schema saves hundreds of lines of code later – and it's the base of the SQL-injection defences I used in my internship.</div></div>
+ </div>
+</section>
+
+<section id="company-visits">
+ <h2>Company Visits</h2>
+ <div class="grid g2">
+  <div class="card"><span class="badge">On-site</span><h3>Network Associates (NA) – Lac 1, Tunis</h3><div class="meta">Summer 2025</div>
+   <p>My internship took me inside Network Associates in Tunis, where I saw how a professional IT team organises its work and delivers software.</p>
+   <div class="links"><a class="btn" href="#internships">See internship</a></div></div>
+ </div>
+</section>
+
+</main>
+<footer><div class="in">
+  <span>© 2026 Amine Ben Nasrallah · MedTech – South Mediterranean University</span>
+  <span><a href="mailto:amine.bennasrallah@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/amine-ben-nasrallah/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/amiiinoooo" target="_blank" rel="noopener">GitHub</a></span>
+</div></footer>
+<script src="site.js" defer></script>
+</body>
+</html>
