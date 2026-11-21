@@ -49,7 +49,7 @@ def page(fname, title, body, head=""):
 <meta property="og:site_name" content="Amine Ben Nasrallah · E-Portfolio">
 <meta property="og:title" content="{title} · Amine Ben Nasrallah · E-Portfolio">
 <meta property="og:description" content="Computer Systems Engineering student at MedTech (SMU): embedded systems, networking and application security projects, internship, CV and certificates.">
-<meta property="og:image" content="https://amiiinoooo.github.io/assets/img/og-card.png">
+<meta property="og:image" content="https://amiiinoooo.github.io/assets/img/og-card-v2.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="627">
 <meta property="og:url" content="https://amiiinoooo.github.io/{"" if fname == "index.html" else fname}">
 <meta name="twitter:card" content="summary_large_image">
